@@ -1,0 +1,372 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html { letter-spacing: 1.4px; font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal;}
+.poppins-black {font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal;}
+
+.container {width: 96%; margin: 0 auto; padding: 0;}
+.container:after,.container:before { content: " "; display: table;}
+.container:after { clear: both;}
+/* box da minha grid */
+.box-1 {width: 6.818181818181818%;}
+.box-2 {width: 15.15151515151515%;}
+.box-3 {width: 23.48484848484848%;}
+.box-4 {width: 31.81818181818182%;}
+.box-5 {width: 40.15151515151515%;}
+.box-6 {width: 48.48484848484848%;}
+.box-7 {width: 56.81818181818182%;}
+.box-8 { width: 65.15151515151515%;}
+.box-9 {width: 73.48484848484848%;}
+.box-10 {width: 81.81818181818182%;}
+.box-11 {width: 90.15151515151515%;}
+.box-12 {width: 98.48484848484848%;}
+.box-1,.box-2,.box-3,.box-4,.box-5,.box-6,.box-7,.box-8,.box-9,.box-10,.box-11,.box-12 {
+    float: left;    margin-left: 0.7575757575757576%;  margin-right: 0.7575757575757576%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);  /* Fundo preto */
+    color: white;  /* Texto branco para contraste */
+  }
+
+
+.cabec{
+
+    background-color: rgb(17, 245, 139);
+    width: 100%;
+    height: 80px;
+    padding: 70px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+
+}
+
+
+
+nav{
+
+    width: 100%;
+}
+
+ul{
+
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+ul li {
+
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+ul li a{
+
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+            /*FACHADA*/
+
+.big-title {
+
+    font-size: 46px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.fachada .big-title{
+
+    margin-top: 250px;
+}
+
+.fachada{
+
+    margin-top: 200px;
+}
+
+.fachada .text{
+
+    letter-spacing: 1.8px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.fachada .caixa{
+
+    background-color: darkorange;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight:500;
+
+
+}
+
+.fachada img{
+
+    width: 100%;
+    display: block;
+    padding: 30px;
+    
+}
+
+.fachada .img{
+
+    padding: 30px;
+
+
+}
+
+/*PRODUTOS*/
+
+.produtos{
+
+    width: 100%;
+    height: auto;
+    background:rgb(17, 245, 139);
+    margin-top: 150px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.produtos .big-title1{
+
+    color: black;
+    font-size: 36px;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+
+
+}
+
+.produtos .big-title1::after{
+
+    content:"" ;
+    width: 30%;
+    height: 6px;
+    display: block;
+    background-color: black;
+    margin: 10px auto 50px auto;  /* Centra a linha com margem automática nas laterais */
+}
+
+.produtos .box-3{
+
+    padding: 5px;
+    background-color:rgb(0, 0, 0) ;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    
+     
+}
+
+.produtos .box-3 img:hover{
+
+    transform: scale(1.1);
+    transition: border 0.5s ease, transform 0.5s ease;
+    
+    object-fit: cover;  /* Faz a imagem preencher o espaço sem distorcer */
+    border: 5px solid transparent; /* Inicialmente a borda é transparente */
+    border-width: 10px;  /* A borda aumenta para 10px */
+    transform: scale(1.1);
+
+}
+
+.produtos .box-3 img{
+
+    width: 100%;
+}
+
+
+/*SOBRE*/
+
+
+.sobre{
+
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: rgb(8, 7, 5);
+    margin-top: 15px;
+    padding-top: 100px;
+}
+
+.sobre .big-title2::after{
+
+    content:"" ;
+    width: 30%;
+    height: 6px;
+    display: block;
+    background-color: rgb(251, 251, 251);
+    margin: 10px auto 50px auto;  /* Centra a linha com margem automática nas laterais */
+}
+
+.big-title2{
+
+    text-align:center;
+    font-size: 36px;
+    padding: 50px;
+    
+}
+
+.sobre .box-4{
+
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sobre .box-8{
+
+    padding: 10px;
+    background-color: rgb(99, 94, 87);
+    border-radius: 5px;
+}
+.sobre img{
+
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1000px; 
+}
+
+.sub-title{
+
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.paragrafo{
+  
+    width: 100%;
+    letter-spacing: 2.0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*CONTATO*/
+
+.contato{
+
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-top: 130px;
+    background-color: rgb(14, 160, 107);
+    padding-top: 40px;
+}
+
+.big-title3{
+
+    text-align:center;
+    font-size: 36px;
+    padding: 50px;
+    
+
+}
+
+.contato .big-title3::after{
+
+    content:"" ;
+    width: 30%;
+    height: 6px;
+    display: block;
+    background-color: black;
+    margin: 10px auto 50px auto;  /* Centra a linha com margem automática nas laterais */
+}
+
+.contato .sub{
+
+        font-size: 24px;
+        margin-bottom: 20px;
+}
+.contato form{
+
+    width: 100%;
+}
+
+.contato input{
+
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.441);
+    box-shadow: 0 .1rem .2rem #07cc98;
+}
+
+.contato textarea{
+
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    height: 150px;
+    padding-top: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.441);
+    box-shadow: 0 .1rem .2rem #07cc98;
+
+
+
+}
+
+.btn{
+
+    background:linear-gradient(to left, darkorange, #06b0d2);
+    color: black;
+    
+}
+
+.btn :hover{
+
+    background: linear-gradient(to left, #17c5d1,darkorange);
+}
+
+.contato ul{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.contato ul li{
+
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid;
+}
+
+.contato ul li i{
+
+    font-size: 38px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+footer{
+
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
